@@ -17,7 +17,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
 camera.position.setX(-3);
 
-// test resize
+// Resize
 window.addEventListener( 'resize', onWindowResize );
 
 renderer.render(scene, camera);
@@ -69,11 +69,11 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('jeff.png');
+// const jeffTexture = new THREE.TextureLoader().load('jeff.png');
 
-const jeff = new THREE.Mesh(new THREE.CircleGeometry(3, 32), new THREE.MeshBasicMaterial({ map: jeffTexture }));
+// const jeff = new THREE.Mesh(new THREE.CircleGeometry(3, 32), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
-scene.add(jeff);
+// scene.add(jeff);
 
 
 // Moon
@@ -156,22 +156,22 @@ scene.add(moon);
 
 // test pour le style
 
-const waterTexture = new THREE.TextureLoader().load('space.jpg');
+// const waterTexture = new THREE.TextureLoader().load('space.jpg');
 
-const styleGeometry = new THREE.TorusKnotGeometry(3, 0.3, 140, 10, 6, 15);
-const styleMaterial = new THREE.MeshStandardMaterial( { color: 0xfefefe, map: waterTexture, normalMap: normalTexture});
-const torusKnot = new THREE.Mesh( styleGeometry, styleMaterial );
-scene.add( torusKnot );
+// const styleGeometry = new THREE.TorusKnotGeometry(3, 0.3, 140, 10, 6, 15);
+// const styleMaterial = new THREE.MeshStandardMaterial( { color: 0xfefefe, map: waterTexture, normalMap: normalTexture});
+// const torusKnot = new THREE.Mesh( styleGeometry, styleMaterial );
+// scene.add( torusKnot );
 
 
 moon.position.z = 30;
 moon.position.setX(-10);
 
-jeff.position.z = -5;
-jeff.position.x = 3;
+// jeff.position.z = -5;
+// jeff.position.x = 3;
 
-torusKnot.position.z = -5;
-torusKnot.position.x = 3;
+// torusKnot.position.z = -5;
+// torusKnot.position.x = 3;
 
 // Scroll Animation
 
@@ -181,8 +181,8 @@ function moveCamera() {
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
-  jeff.rotation.y += 0.01;
-  jeff.rotation.z += 0.01;
+  // jeff.rotation.y += 0.01;
+  // jeff.rotation.z += 0.01;
 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
@@ -193,7 +193,7 @@ document.body.onscroll = moveCamera;
 moveCamera();
 
 
-// test resize
+// Resize
 function onWindowResize() {
 
   camera.aspect = window.innerWidth / window.innerHeight;
@@ -208,9 +208,9 @@ function onWindowResize() {
 function animate() {
   requestAnimationFrame(animate);
 
-  torus.rotation.x += 0.01;
-  torus.rotation.y += 0.005;
-  torus.rotation.z += 0.01;
+  // torus.rotation.x += 0.01;
+  // torus.rotation.y += 0.005;
+  // torus.rotation.z += 0.01;
 
 
   earth.rotation.y += .015;
@@ -220,7 +220,7 @@ function animate() {
 
   moon.rotation.x += 0.005;
 
-  torusKnot.rotation.z -= 0.01;
+  // torusKnot.rotation.z -= 0.01;
 
   controls.update();
 

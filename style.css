@@ -71,7 +71,7 @@ canvas {
   blockquote p {
     color: black;
     background-color: white;
-    font-size: 4rem;
+    font-size: 2.5rem;
     display: inline;
     line-height: 1;
   }
@@ -104,4 +104,15 @@ canvas {
   }
   .left p{
     text-align: center;
+  }
+  .skill{
+    text-align: center;
+    width: 47%;
+  }
+  .skill li{
+    width: auto;
+  } 
+
+  .skills{
+    display: flex;
   }
