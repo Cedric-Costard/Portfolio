@@ -54,7 +54,7 @@ function addStar() {
   
   const [x, y, z] = Array(3)
   .fill()
-  .map(() => THREE.MathUtils.randFloatSpread(100));
+  .map(() => THREE.MathUtils.randFloatSpread(100)*3);
   
   star.position.set(x, y, z);
   scene.add(star);
@@ -213,10 +213,10 @@ function animate() {
   // torus.rotation.z += 0.01;
 
 
-  earth.rotation.y += .015;
-  clouds.rotation.y += .025;
-  clouds.rotation.z += .0125;
-  bump.rotation.y += .015;
+  earth.rotation.y += .0015;
+  clouds.rotation.y += .0025;
+  clouds.rotation.z += .00125;
+  bump.rotation.y += .0015;
 
   moon.rotation.x += 0.005;
 
@@ -228,3 +228,16 @@ function animate() {
 }
 
 animate();
+
+// bouton désactiver three.js
+// function handlebuton() {
+//   alert('salut cest cool !');
+//   let background = document.querySelector('canvas');
+//   if (background.className === 'hidden') {
+//     background.classList.remove("hidden");
+//   }else{
+//     background.className = 'hidden';
+//   }
+// }
+
+// document.querySelector('div.bouton').addEventListener("click", handlebuton);

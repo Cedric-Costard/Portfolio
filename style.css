@@ -119,9 +119,9 @@ canvas {
     list-style: none;
     width: 24%;
   }
-  .left p{
+  /* .left p{
     text-align: center;
-  }
+  } */
   .skill{
     text-align: center;
     width: 47%;
@@ -133,3 +133,60 @@ canvas {
   .skills{
     display: flex;
   }
+
+/* pour le bouton  */
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 200px;
+  height: 100px;
+  background: #2c2772;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: grey;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}
+
+div.bouton{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  /* background-color: violet; */
+  height: 10%;
+}
+
+.hidden {
+  display: none;
+}
