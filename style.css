@@ -33,6 +33,12 @@ canvas {
   }
 }
 
+body{
+  /* background-image: url("public/space.jpg"); */
+  /* background-size: cover; */
+  background: linear-gradient(45deg,black, white  );
+}
+
 
 main {
   width: 100vw;
@@ -43,6 +49,8 @@ main {
   margin: 0px auto;
   padding: 120px 0px;
   
+
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -145,23 +153,23 @@ input[type=checkbox] {
 label {
   cursor: pointer;
   text-indent: -9999px;
-  width: 200px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
   background: #2c2772;
   display: block;
-  border-radius: 100px;
+  border-radius: 50px;
   position: relative;
 }
 
 label:after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 90px;
-  height: 90px;
+  top: 2.5px;
+  left: 2.5px;
+  width: 45px;
+  height: 45px;
   background: #fff;
-  border-radius: 90px;
+  border-radius: 45px;
   transition: 0.3s;
 }
 
@@ -175,7 +183,7 @@ input:checked + label:after {
 }
 
 label:active:after {
-  width: 130px;
+  width: 65px;
 }
 
 div.bouton{
