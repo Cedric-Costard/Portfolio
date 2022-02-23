@@ -134,6 +134,13 @@ canvas {
     text-align: center;
     width: 47%;
   }
+  .skillAlone{
+    text-align: center;
+    width: auto;
+  }
+  .skillAlone li{
+    width: auto;
+  }
   .skill li{
     width: auto;
   } 
